@@ -1,0 +1,7 @@
+{
+    "extends": "./index.js",
+    "globals": {
+        "module": false,
+        "require": false
+    }
+}

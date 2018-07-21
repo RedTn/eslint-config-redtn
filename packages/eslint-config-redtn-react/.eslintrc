@@ -1,0 +1,7 @@
+{
+    "extends": "../eslint-config-redtn/index.js",
+    "globals": {
+        "module": false,
+        "require": false
+    }
+}
