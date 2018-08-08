@@ -8,6 +8,9 @@ env:
   - PACKAGE_NAME=eslint-config-redtn
   - PACKAGE_NAME=eslint-config-redtn-react
 before_install:
+  - npm install -g greenkeeper-lockfile
   - cd ./packages/$PACKAGE_NAME
 install:
   - npm install
+before_script: greenkeeper-lockfile-update
+after_script: greenkeeper-lockfile-upload

@@ -1,5 +1,6 @@
 # RedTn's ESLint Monorepo
 
+[![Build Status](https://travis-ci.org/RedTn/eslint-config-redtn.svg?branch=master)](https://travis-ci.org/RedTn/eslint-config-redtn)
 [![Greenkeeper badge](https://badges.greenkeeper.io/RedTn/eslint-config-redtn.svg)](https://greenkeeper.io/)
 
 ## Usage
