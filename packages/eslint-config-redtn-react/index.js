@@ -1,19 +1,19 @@
 module.exports = {
-  parserOptions: {
-    'ecmaFeatures': {
-      'jsx': true
+    parserOptions: {
+        'ecmaFeatures': {
+            'jsx': true
+        },
     },
-  },
 
-  plugins: [
-    'react'
-  ],
+    plugins: [
+        'react'
+    ],
 
-  extends: [
-    'eslint-config-redtn',
-    'plugin:react/recommended'
-  ].concat([
-    './rules/react'
-  ].map(require.resolve))
+    extends: [
+        'eslint-config-redtn',
+        'plugin:react/recommended'
+    ].concat([
+        './rules/react'
+    ].map(require.resolve))
 
 };
