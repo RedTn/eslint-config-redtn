@@ -1,5 +1,7 @@
 # RedTn's ESLint Monorepo
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/RedTn/eslint-config-redtn.svg)](https://greenkeeper.io/)
+
 ## Usage
 
 #### Base ESLint
