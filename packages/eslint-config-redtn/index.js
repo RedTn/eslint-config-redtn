@@ -1,16 +1,16 @@
 module.exports = {
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module'
-  },
+    parserOptions: {
+        ecmaVersion: 2018,
+        sourceType: 'module'
+    },
 
-  extends: [
-    'eslint:recommended'
-  ].concat([
-    './rules/base'
-  ].map(require.resolve)),
+    extends: [
+        'eslint:recommended'
+    ].concat([
+        './rules/base'
+    ].map(require.resolve)),
 
-  globals: {
+    globals: {
 
-  }
+    }
 };
