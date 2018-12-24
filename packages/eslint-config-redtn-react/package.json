@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-redtn-react",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "ESLint config for react projects",
   "main": "index.js",
   "scripts": {
