@@ -18,7 +18,7 @@
   "author": "Redmond Tran",
   "license": "ISC",
   "peerDependencies": {
-    "eslint": "5.x",
+    "eslint": "^6.0.0",
     "eslint-plugin-react": "7.x"
   },
   "devDependencies": {
