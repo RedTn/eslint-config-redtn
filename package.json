@@ -2,7 +2,7 @@
   "version": "0.1.1",
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
-    "@commitlint/config-conventional": "^8.0.0",
+    "@commitlint/config-conventional": "^8.2.0",
     "@commitlint/config-lerna-scopes": "^7.1.2",
     "commitizen": "^4.0.0",
     "conventional-changelog-cli": "^2.0.1",
