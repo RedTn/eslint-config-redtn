@@ -17,9 +17,9 @@
   "author": "Redmond Tran",
   "license": "ISC",
   "peerDependencies": {
-    "eslint": "5.x"
+    "eslint": "^6.7.2"
   },
   "devDependencies": {
-    "eslint": "^5.2.0"
+    "eslint": "^6.7.2"
   }
 }
