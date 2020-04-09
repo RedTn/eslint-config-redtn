@@ -7,7 +7,7 @@
     "commitizen": "^4.0.0",
     "conventional-changelog-cli": "^2.0.1",
     "cz-conventional-changelog": "^3.0.2",
-    "husky": "^4.0.10",
+    "husky": "^4.2.4",
     "lerna": "^3.8.0"
   },
   "husky": {
