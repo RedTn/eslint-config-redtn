@@ -4,7 +4,7 @@
     "@commitlint/cli": "^8.3.4",
     "@commitlint/config-conventional": "^8.3.4",
     "@commitlint/config-lerna-scopes": "^8.3.4",
-    "commitizen": "^4.0.0",
+    "commitizen": "^4.1.1",
     "conventional-changelog-cli": "^2.0.1",
     "cz-conventional-changelog": "^3.0.2",
     "husky": "^4.0.10",
