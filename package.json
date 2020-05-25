@@ -8,7 +8,7 @@
     "conventional-changelog-cli": "^2.0.1",
     "cz-conventional-changelog": "^3.0.2",
     "husky": "^4.0.10",
-    "lerna": "^3.8.0"
+    "lerna": "^3.22.0"
   },
   "husky": {
     "hooks": {
