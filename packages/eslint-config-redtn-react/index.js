@@ -1,19 +1,29 @@
+const react = require('./rules/react');
+
+const commonExtends = ['airbnb', 'redtn', 'prettier/react'];
+const commonPlugins = ['react-hooks'];
+
 module.exports = {
+    extends: [...commonExtends],
+    plugins: [...commonPlugins],
     parserOptions: {
-        'ecmaFeatures': {
-            'jsx': true
+        ecmaFeatures: {
+            jsx: true,
         },
     },
-
-    plugins: [
-        'react'
-    ],
-
-    extends: [
-        'eslint-config-redtn',
-        'plugin:react/recommended'
-    ].concat([
-        './rules/react'
-    ].map(require.resolve))
-
+    rules: {
+        ...react,
+    },
+    settings: {
+        react: {
+            pragma: 'React',
+            version: 'detect',
+        },
+        'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
+        'import/resolver': {
+            node: {
+                extensions: ['.js', '.jsx', '.ts', '.tsx'],
+            },
+        },
+    },
 };

@@ -1,19 +1,24 @@
 {
-  "version": "0.1.1",
+  "private": true,
   "devDependencies": {
-    "@commitlint/cli": "^8.3.4",
+    "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@commitlint/config-lerna-scopes": "^8.3.4",
-    "commitizen": "^4.0.0",
-    "conventional-changelog-cli": "^2.0.1",
-    "cz-conventional-changelog": "^3.0.2",
-    "husky": "^4.0.10",
-    "lerna": "^3.8.0"
+    "commitizen": "^4.1.2",
+    "conventional-changelog-cli": "^2.0.34",
+    "cz-conventional-changelog": "^3.2.0",
+    "husky": "^4.2.5",
+    "lerna": "^3.22.1"
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lerna run --concurrency 1 --stream precommit --since HEAD"
     }
+  },
+  "engines": {
+    "node": ">= 12.0.0",
+    "yarn": "^1.22.4"
   },
   "license": "ISC",
   "repository": {
@@ -27,8 +32,15 @@
   },
   "scripts": {
     "cz": "git-cz",
+    "depcheck": "lerna run depcheck",
+    "format:check": "lerna run format:check",
     "generate-changelog": "conventional-changelog -p eslint -i CHANGELOG.md -s",
     "lerna-bootstrap": "lerna bootstrap",
-    "lerna-publish": "lerna publish --conventional-commits --changelog-preset eslint"
-  }
+    "lerna-publish": "lerna publish --conventional-commits --changelog-preset eslint",
+    "lint": "lerna run lint",
+    "test": "lerna run test"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }

@@ -1,16 +1,17 @@
+const base = require('./rules/base');
+
+const commonExtends = ['airbnb-base', 'prettier'];
+const commonPlugins = ['babel'];
+
 module.exports = {
+    extends: [...commonExtends],
+    plugins: [...commonPlugins],
+    parser: 'babel-eslint',
     parserOptions: {
-        ecmaVersion: 2018,
-        sourceType: 'module'
+        ecmaVersion: 11,
+        sourceType: 'module',
     },
-
-    extends: [
-        'eslint:recommended'
-    ].concat([
-        './rules/base'
-    ].map(require.resolve)),
-
-    globals: {
-
-    }
+    rules: {
+        ...base,
+    },
 };
