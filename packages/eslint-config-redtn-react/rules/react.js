@@ -1,19 +1,10 @@
 module.exports = {
-    rules: {
-        'react/react-in-jsx-scope': 0,
-        /* This rule will ensure the render() method in React will always have
-     * a return statement for all edge cases.
-     */
-        'consistent-return': 'error',
-        'react/sort-comp': ['error', {
-            'order': [
-                'static-methods',
-                'lifecycle',
-                'everything-else',
-                'render'
-            ],
-            'groups': {
-                'lifecycle': [
+    'react/sort-comp': [
+        'error',
+        {
+            order: ['static-methods', 'lifecycle', 'everything-else', 'render'],
+            groups: {
+                lifecycle: [
                     'displayName',
                     'propTypes',
                     'contextTypes',
@@ -39,10 +30,9 @@ module.exports = {
                     'getSnapshotBeforeUpdate',
                     'componentDidUpdate',
                     'componentDidCatch',
-                    'componentWillUnmount'
-                ]
-            }
-        }
-        ]
-    }
+                    'componentWillUnmount',
+                ],
+            },
+        },
+    ],
 };
