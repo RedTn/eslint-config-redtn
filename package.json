@@ -29,6 +29,11 @@
     "cz": "git-cz",
     "generate-changelog": "conventional-changelog -p eslint -i CHANGELOG.md -s",
     "lerna-bootstrap": "lerna bootstrap",
-    "lerna-publish": "lerna publish --conventional-commits --changelog-preset eslint"
-  }
+    "lerna-publish": "lerna publish --conventional-commits --changelog-preset eslint",
+    "lint": "lerna run lint",
+    "test": "lerna run test"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
